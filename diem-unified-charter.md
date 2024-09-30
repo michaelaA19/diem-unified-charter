@@ -1,103 +1,52 @@
-# Terminology
+"Digital emblems" is a catch-all term for mechanisms that convey information
+of legal, compliance, or other significance associated with an asset that need
+to be verified and should inform some behavior of emblem validators. Several
+use cases for digital emblems cover emblems that already have legal definitions.
+This makes the entities that define acceptable forms of those emblems required
+stakeholders of this Working Group. Today, there exists no accepted collection
+of standards for issuing, applying, or validating digital emblems that need to
+be recognized under international law.
 
-Bearers: assets of any kind that have digital emblems associated with them for
-    Verifiers to discover.
+These use cases are specified and explored in greater detail in Working Group
+associated documents (see Documents tab).
 
-Responsible Entities: entities that are responsible for the development of the
-    distinctive emblems under International Humanitarian Law. These may be
-    elsewhere known as legal guardians, depositories, or other things depending
-    on the Responsible Entity.
+While the format of digital emblems is expected to maximize reuse of existing
+standards, emblem application and validation mechanisms may differ based on
+whether the emblem-bearing asset is considered physical or digital. This is
+because digital emblems bound to physical assets need to be communicated
+through digital means that are initiated via physical proximity or use of
+information discovered through physical observation. On the other hand, digital
+emblems bound to digital assets will already have a channel by which a digital
+emblem validator is communicating with the asset (i.e. a network path).
 
-Verifiers: parties that check potential Bearers for the presence of digital
-    emblems.
+This Working Group will focus on creating new standards or defining the reuse of
+existing standards for issuing digital emblems, applying digital emblems to
+assets, and validating digital emblems. In the process, it will coordinate with
+the SPICE Working Group for reuse of IETF credential related standards, other
+Working Groups as needed if pre-existing protocols (such as TLS or DNS) are used
+by developed standards, and external entities responsible for defining
+acceptable uses of their legally defined emblems.
 
-# Use Cases
+This Working Group considers the following goals in scope. The first milestone
+of this Working Group will be to (1) gain consensus with entities responsible
+for defining acceptable uses of their legally defined emblems on requirements
+and (2) based on those requirements, identify which portions of these goals
+require novel work and which should be given to other Working Groups that may
+already own related scope. Divergent requirements between such stakeholders
+may result in distinct units of work, but this determination is left to this
+first milestone of the Working Group.
 
-Digital emblems is a catch-all term for mechanisms that convey information
-of legal, compliance, or other significance associated with a Bearer that need
-to be verified and should inform some behavior of Verifiers. These use cases are
-broken down into categories based on similarities in requirements and whether
-the use cases have Responsible Entities that determine the fitness of a given
-technical solution. While emblem format is expected to maximize reuse, emblem
-discovery and conveyance mechanisms result in the divergent requirements that
-motivate these categories.
+- Define reusable format(s) for Digital Emblems
+- Define validation mechanism(s) for Digital Emblems
+- Define discovery of Digital Emblems for Digital Assets
+- Define discovery of Digital Emblems for Physical Assets
 
-## Digital Protection with Responsible Entities
+### BoF v2 discussion TODO: should this WG adopt both digital and physical assets? 
 
-This category includes use cases for digitally signaling an emblem to inform
-Verifiers that digital attacks against the Bearer are forbidden by law.
-Verifiers may not ever interact with the Bearer in a physical manner, so there
-is no concept of binding this emblem to a physical object.
-
-These emblems have legal guardians that determine whether a given technical
-solution is acceptable for their use case(s). Known use cases include the Blue
-Shield (UNESCO) and Red Cross/Crescent/Crystal (ICRC).
-
-Unique technical requirement(s):
-- must prevent Bearers from discovering Verifiers
-- must meet requirements of legal guardians to be useful to implementors
-
-This work is recommended for a new WG based on the first requirement not
-existing in any current WG charter. It is expected that the format of the
-emblems will be coordinated with other WGs to maximize reuse.
-
-## Physical Protection with Responsible Entities
-
-This category includes use cases for digitally signaling an emblem to inform
-Verifiers that physical attacks against the Bearer are forbidden by law.
-Verifiers primarily interact with the Bearers physically, so the digital
-emblem must be verifiably bound to the physical asset and discoverable through
-digital means that are achievable via physical proximity or use of information
-discovered through physical observation.
-
-These emblems have Responsible Entities that determine whether a given technical
-solution is acceptable for their use case(s). Known use cases include the
-labeling protected members of the press (???Resp. Entity???), TODO: others?
-
-Unique technical requirement(s):
-- must be bound to and discovered for a physical Bearer
-- must meet requirements of legal guardians to be useful to implementors
-
-This work is recommended for adoption by SPICE based on the "physical binding"
-requirement's similarity to SPICE use case 5.2 [1]. It is expected that the
-format of the emblems will be coordinated with other WGs to maximize reuse.
-
-## Physical Properties with or without Responsible Entities
-
-This category includes use cases for digital discovery of mutable information
-bound to a physical object. Unlike the other categories, this category enables
-the digital discovery of variable and mutable data that is bound to a physical
-object without association to a protected legal status (even if the emblem
-itself is legally defined).
-
-These emblems may not have Responsible Entities, so defining an acceptable
-solution may be up to consensus among implementors (as is typical in the IETF).
-Known use cases include ISO labels on packages, TODO: others?
-
-Unique technical requirement(s):
-- must be bound to and discovered for a physical Bearer
-- must support mutable data such as Bearer access logs or content changes
-
-This work is recommended for adoption by SPICE based on the "physical binding"
-requirement's similarity to SPICE use case 5.2 [1]. It is expected that the
-format of the emblems will be coordinated with other WGs to maximize reuse.
-
-# Pre-existing Work
-
-There are existing digital emblem solutions today, such as the Whiteflag
-protocol, that new and existing WGs are recommended to use as working examples
-that may prove useful during solution design (whether or not these existing
-solutions can be directly reused).
-
-# Note on Responsible Entities
-
-It is not typical for IETF work to address the expectations of Responsible
-Entities for a standard to be considered fit for its purpose. Chartered work
-for use cases with legal guardians should only adopt scope and develop solutions
-for Responsible Entities who are actively engaged (in addition to the typical
-engagement of future implementors) to avoid inventing solutions that will not be
+It is not typical for IETF work to address the expectations of entities that are
+legally responsible for determining if a standard is suitable for a given use
+case. However, the digital emblems space has several such entities who own emblems
+recognized under international law. This Working Group will only develop solutions
+when the corresponding entity is actively engaged (in addition to the typical
+engagement of future implementors) to avoid inventing solutions that cannot be
 adopted by their intended audience.
-
-# References
-
-[1] https://datatracker.ietf.org/doc/draft-ietf-spice-use-cases/
