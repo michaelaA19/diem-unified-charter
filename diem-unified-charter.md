@@ -1,6 +1,8 @@
-"Digital emblems" is a catch-all term for mechanisms that convey information
+# Introduction
+
+Digital emblems is a catch-all term for mechanisms that convey information
 of legal, compliance, or other significance associated with an asset that need
-to be verified and should inform some behavior of emblem validators. Several
+to be verified and should inform the behavior of entities validating the emblem. Several
 use cases for digital emblems cover emblems that already have legal definitions.
 This makes the entities that define acceptable forms of those emblems required
 stakeholders of this Working Group. Today, there exists no accepted collection
@@ -10,22 +12,25 @@ be recognized under international law.
 These use cases are specified and explored in greater detail in Working Group
 associated documents (see Documents tab).
 
+# Problem Statement
+
 While the format of digital emblems is expected to maximize reuse of existing
 standards, emblem application and validation mechanisms may differ based on
-whether the emblem-bearing asset is considered physical or digital. This is
-because digital emblems bound to physical assets need to be communicated
-through digital means that are initiated via physical proximity or use of
-information discovered through physical observation. On the other hand, digital
-emblems bound to digital assets will already have a channel by which a digital
-emblem validator is communicating with the asset (i.e. a network path).
+a number of different conditions. Discovery of the digital emblem may differ
+based on the type of asset being protected. Binding of a digital emblem to an
+asset will depend on the distribution mechanism associated with the digital emblem.
+Validation methods are dependent upon the criteria defined by the issuing entity.
+These conditions will need to be explored as a part of documenting the use cases
+supported by a digital emblem standard.
+
+# Goals
 
 This Working Group will focus on creating new standards or defining the reuse of
 existing standards for issuing digital emblems, applying digital emblems to
 assets, and validating digital emblems. In the process, it will coordinate with
-the SPICE Working Group for reuse of IETF credential related standards, other
-Working Groups as needed if pre-existing protocols (such as TLS or DNS) are used
-by developed standards, and external entities responsible for defining
-acceptable uses of their legally defined emblems.
+other IETF working groups (e.g., SPICE, DRIP, SCITT, etc.) on the proper reuse of
+existing IETF standards. Additionally, the working group will liaise with
+external organizations responsible for defining acceptable uses of their legally defined emblems.
 
 This Working Group considers the following goals in scope. The first milestone
 of this Working Group will be to (1) gain consensus with entities responsible
