@@ -53,3 +53,13 @@ The following are proposed deliverables and their target status:
 - Framework (Informational) describing conceptual model of operation and key terminology
 - Data model and validation (Standards Track)
 - Discovery (Standards Track) (multiple)
+
+### BoF v2 discussion TODO: should this WG adopt both digital and physical assets? 
+
+It is not typical for IETF work to address the expectations of entities that are
+legally responsible for determining if a standard is suitable for a given use
+case. However, the digital emblems space has several such entities who own emblems
+recognized under international law. This Working Group will only develop solutions
+when the corresponding entity is actively engaged (in addition to the typical
+engagement of future implementors) to avoid inventing solutions that cannot be
+adopted by their intended audience.
