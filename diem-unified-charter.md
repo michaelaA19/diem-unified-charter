@@ -9,8 +9,8 @@ stakeholders of this Working Group. Today, there exists no accepted collection
 of standards for issuing, applying, or validating digital emblems that need to
 be recognized under international law.
 
-These use cases are specified and explored in greater detail in Working Group
-associated documents (see Documents tab).
+These use cases are specified and explored in greater detail in
+(https://datatracker.ietf.org/doc/draft-haberman-digital-emblem-ps/).
 
 # Problem Statement
 
@@ -28,8 +28,8 @@ supported by a digital emblem standard.
 This Working Group will focus on creating new standards or defining the reuse of
 existing standards for issuing digital emblems, applying digital emblems to
 assets, and validating digital emblems. In the process, it will coordinate with
-other IETF working groups (e.g., SPICE, DRIP, SCITT, etc.) on the proper reuse of
-existing IETF standards. Additionally, the working group will liaise with
+other IETF Working Groups (e.g., SPICE, DRIP, SCITT, etc.) on the proper reuse of
+existing IETF standards. Additionally, the Working Group will liaise with
 external organizations responsible for defining acceptable uses of their legally defined emblems.
 
 This Working Group considers the following goals in scope. The first milestone
@@ -46,12 +46,10 @@ first milestone of the Working Group.
 - Define discovery of Digital Emblems for Digital Assets
 - Define discovery of Digital Emblems for Physical Assets
 
-### BoF v2 discussion TODO: should this WG adopt both digital and physical assets? 
+# Deliverables
+The following are proposed deliverables and their target status:
 
-It is not typical for IETF work to address the expectations of entities that are
-legally responsible for determining if a standard is suitable for a given use
-case. However, the digital emblems space has several such entities who own emblems
-recognized under international law. This Working Group will only develop solutions
-when the corresponding entity is actively engaged (in addition to the typical
-engagement of future implementors) to avoid inventing solutions that cannot be
-adopted by their intended audience.
+- Use cases and requirements (Informational)
+- Framework (Informational) describing conceptual model of operation and key terminology
+- Data model and validation (Standards Track)
+- Discovery (Standards Track) (multiple)
