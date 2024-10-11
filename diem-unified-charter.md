@@ -41,6 +41,11 @@ already own related scope. Divergent requirements between such stakeholders
 may result in distinct units of work, but this determination is left to this
 first milestone of the Working Group.
 
+- Define reusable format(s) for Digital Emblems
+- Define validation mechanism(s) for Digital Emblems
+- Define discovery of Digital Emblems for Digital Assets
+- Define discovery of Digital Emblems for Physical Assets
+
 # Deliverables
 The following are proposed deliverables and their target status:
 
